@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Contact Chay Park">
+    <meta name="keywords" content="Chay Park, Web Development, Front-end, Back-end, UX Design">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <style>
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+          <div>
+            <table>
+              <caption>Navigation Menu</caption>
+              <colgroup>
+                  <col span="6">
+              </colgroup>
+              <tr>
+                <th scope="col">Home</th>
+                <th scope="col">About Me</th>
+                <th scope="col">Contact Me</th>
+                <th scope="col">Projects</th>
+                <th scope="col">Resume</th>
+                <th scope="col">Courses</th>
+              </tr>
+              <tr>
+                <td>
+                  <a href="home.html">Chay Park</a>
+                </td>
+                <td>
+                  <a href="about_me.html">About Me</a>
+                </td>
+                <td>
+                  <a href="contact_me.html">Contact Me</a>
+                </td>
+                <td>
+                  <a href="projects.html">Projects</a>
+                </td>
+                <td>
+                  <a href="resume.html">Resume</a>
+                </td>
+                <td>
+                  <a href="courses.html">Courses</a>
+                </td>
+              </tr>
+            </table>
+            <label for="browser">Choose your browser from the list:</label>
+              <input list="browsers" id="browser" name="browser">
+              <datalist id="browsers">
+                <option value="Chrome">
+                <option value="Firefox">
+                <option value="Internet Explorer">
+                <option value="Opera">
+                <option value="Safari">
+              </datalist>
+          </div>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <section>
+            <h1>Contact Me</h1>
+            <hr>
+            <form>
+                <fieldset>
+                    <legend>Your Contact Information</legend>
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name"><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email">
+                </fieldset>
+                <fieldset>
+                    <legend>Your Message</legend>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message"></textarea>
+                </fieldset>
+                <br>
+                <button>cancel</button>
+                <input type="submit" value="Submit">
+            </form>
+            <hr>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 <em>Chay Park</em></p>
+        <details>
+            <summary>Legal Information</summary>
+            <p>This site is designed and maintained by Chay Park. The contents are protected by copyright.</p>
+        </details>
+    </footer>
+</body>
+</html>

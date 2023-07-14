@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="About Chay Park">
+    <meta name="keywords" content="Chay Park, Web Development, Front-end, Back-end, UX Design">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+</head>
+<body>
+    <header>
+        <nav>
+          <div>
+            <table>
+              <caption>Navigation Menu</caption>
+              <colgroup>
+                  <col span="6">
+              </colgroup>
+              <tr>
+                <th scope="col">Home</th>
+                <th scope="col">About Me</th>
+                <th scope="col">Contact Me</th>
+                <th scope="col">Projects</th>
+                <th scope="col">Resume</th>
+                <th scope="col">Courses</th>
+              </tr>
+              <tr>
+                <td>
+                  <a href="home.html">Chay Park</a>
+                </td>
+                <td>
+                  <a href="about_me.html">About Me</a>
+                </td>
+                <td>
+                  <a href="contact_me.html">Contact Me</a>
+                </td>
+                <td>
+                  <a href="projects.html">Projects</a>
+                </td>
+                <td>
+                  <a href="resume.html">Resume</a>
+                </td>
+                <td>
+                  <a href="courses.html">Courses</a>
+                </td>
+              </tr>
+            </table>
+            <label for="browser">Choose your browser from the list:</label>
+              <input list="browsers" id="browser" name="browser">
+              <datalist id="browsers">
+                <option value="Chrome">
+                <option value="Firefox">
+                <option value="Internet Explorer">
+                <option value="Opera">
+                <option value="Safari">
+              </datalist>
+          </div>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <section>
+            <h1>About Me</h1>
+            <canvas id="myCanvas" width="200" height="200"></canvas>
+            <script>
+              var canvas = document.getElementById('myCanvas');
+              var context = canvas.getContext('2d');
+              var image = new Image();
+
+              image.onload = function() {
+                context.beginPath();
+                context.ellipse(100, 150, 100, 150, 0, 0, 2 * Math.PI);
+                context.clip(); // Clip the following image within the oval path
+                context.drawImage(image, 0, 0, 200, 300);
+              };
+
+              image.src = 'pic/chay.jpeg'; // Replace with the path to your image
+            </script>
+            <figure>
+                <!-- <img src="pic/chay.jpeg" alt="Picture of Me" width="200" height="300"> -->
+                <figcaption>Me, Chay Park</figcaption>
+            </figure>
+            <hr>
+            <h2>Personal Info</h2>
+            <p><b>Name:</b> <i>Chay Park</i></p>
+            <p><b>Interest:</b> Web Development</p>
+            <p><b>Skills:</b> Front-end, Back-end, UX Design</p>
+            <hr>
+            <h3>Professional Experience</h3>
+            <ul>
+                <li><strong>Company A:</strong> Front-end Developer</li>
+                <li><strong>Company B:</strong> Back-end Developer</li>
+            </ul>
+            <hr>
+            <h3>Pages</h3>
+            <iframe src="https://www.linkedin.com/in/chaeyeon-park-8246961ba" title="Linkedin Website">
+            <hr>
+        </section>
+        <aside>
+            <h3>Skills</h3>
+            <ol>
+                <li>JavaScript</li>
+                <li>HTML & CSS</li>
+                <li>Python</li>
+            </ol>
+        </aside>
+    </main>
+    <footer>
+        <div>
+            <p>&copy; 2023 <em>Chay Park</em></p>
+            <details>
+                <summary>Legal Information</summary>
+                <p>This site is designed and maintained by Chay Park. The contents are protected by copyright.</p>
+            </details>
+        </div>
+    </footer>
+</body>
+</html>
