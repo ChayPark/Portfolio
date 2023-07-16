@@ -62,25 +62,14 @@
     <main>
         <section>
             <h1>About Me</h1>
-            <canvas id="myCanvas" width="200" height="200"></canvas>
-            <script>
-              var canvas = document.getElementById('myCanvas');
-              var context = canvas.getContext('2d');
-              var image = new Image();
-
-              image.onload = function() {
-                context.beginPath();
-                context.ellipse(100, 150, 100, 150, 0, 0, 2 * Math.PI);
-                context.clip(); // Clip the following image within the oval path
-                context.drawImage(image, 0, 0, 200, 300);
-              };
-
-              image.src = 'pic/chay.jpeg'; // Replace with the path to your image
-            </script>
             <figure>
-                <!-- <img src="pic/chay.jpeg" alt="Picture of Me" width="200" height="300"> -->
-                <figcaption>Me, Chay Park</figcaption>
+            <img src="pic/chay.jpeg" alt="Picture of Me" width="200" height="300">
+            <figcaption>Me, Chay Park</figcaption>
             </figure>
+            <canvas id="myCanvas" width="10" height="10"></canvas>
+            <script>
+            // Placeholder script for analytics
+            </script>
             <hr>
             <h2>Personal Info</h2>
             <p><b>Name:</b> <i>Chay Park</i></p>
