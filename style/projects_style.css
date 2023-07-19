@@ -60,3 +60,20 @@ text-align: center;
 section h1 {
 margin-top: 0;
 }
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+footer details {
+    display: block;
+    margin-top: 10px;
+}

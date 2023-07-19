@@ -72,3 +72,14 @@ header, footer {
     transform: translateY(0);
   }
   
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+footer details {
+    display: block;
+    margin-top: 10px;
+}
