@@ -7,13 +7,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="style/home_style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap">
+    <style>
+        body {
+            border: 1px solid black;
+            margin: 0;
+            padding: 0;
+        }
+        main {
+            margin: 2em;
+        }
+    </style>
 </head>
 <body>
     <header>
         <nav>
             <table>
+                <caption>Navigation Menu</caption>
+                <colgroup>
+                    <col span="6">
+                </colgroup>
+                <tr>
+                    <th scope="col">Home</th>
+                    <th scope="col">About Me</th>
+                    <th scope="col">Contact Me</th>
+                    <th scope="col">Projects</th>
+                    <th scope="col">Resume</th>
+                    <th scope="col">Courses</th>
+                </tr>
                 <tr>
                     <td>
                         <a href="home.html">Chay Park</a>
@@ -47,16 +67,15 @@
                 </svg>                            
                 <figcaption>Me, Chay Park</figcaption>
             </figure>
-            <p><strong>Hello, my name is Chay Park.</strong> <br>
-                        I am a passionate and dedicated web developer with a strong interest in front-end and back-end development.
-                        Thank you for visiting my portfolio, and I hope you find my work inspiring and informative.</p>
+            <pre><strong>Hello, my name is Chay Park.</strong> <br>
+I am a passionate and dedicated web developer with a strong interest in front-end and back-end development.<br>
+Thank you for visiting my portfolio, and I hope you find my work inspiring and informative.</pre>
         </section>
-                 
+        <audio controls>
+            <source src="/audio/summer.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>          
     </main>
-    <audio controls>
-        <source src="/audio/summer.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio> 
     <footer>
         <p>&copy; 2023 Chay Park</p>
     </footer>
