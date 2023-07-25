@@ -7,29 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
-    <style>
-        .project {
-            margin-bottom: 2em;
-        }
-    </style>
+    <link rel="stylesheet" href="style/projects_style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap">
 </head>
 <body>
     <header>
         <nav>
             <div>
               <table>
-                <caption>Navigation Menu</caption>
-                <colgroup>
-                    <col span="6">
-                </colgroup>
-                <tr>
-                  <th scope="col">Home</th>
-                  <th scope="col">About Me</th>
-                  <th scope="col">Contact Me</th>
-                  <th scope="col">Projects</th>
-                  <th scope="col">Resume</th>
-                  <th scope="col">Courses</th>
-                </tr>
                 <tr>
                   <td>
                     <a href="home.html">Chay Park</a>
@@ -51,36 +36,32 @@
                   </td>
                 </tr>
               </table>
-              <label for="browser">Choose your browser from the list:</label>
-              <input list="browsers" id="browser" name="browser">
-              <datalist id="browsers">
-                <option value="Chrome">
-                <option value="Firefox">
-                <option value="Internet Explorer">
-                <option value="Opera">
-                <option value="Safari">
-              </datalist>
             </div>
         </nav>
     </header>
+    <hr>
     <main>
         <section>
             <h1>Projects</h1>
             <hr>
-            <p>Visit my linkedin : <a href="https://www.linkedin.com/in/chaypark/">Chay's Linkedin</a></p>
             <div class="project">
-                <picture>
-                    <source srcset="pic/placeholder.png" media="(min-width: 10px)">
-                    <img src="pic/placeholder.png" alt="Project 1 Imag" style="width:200px;">
-                </picture>
-                <template id="myTemplate">
-                    <h2>Project 1</h2>
-                    <img src="pic/placeholder.png" alt="Project 1">
-                </template>
-                <!-- <img src="pic/placeholder.png" alt="Project 1 Image" width="200"/> -->
+                <div class="image-container">
+                    <picture>
+                        <source srcset="pic/web1.png" media="(min-width: 600px)">
+                        <img src="pic/web1-small.png" alt="Project 1 Image 1">
+                    </picture>
+                    <picture>
+                        <source srcset="pic/web2.png" media="(min-width: 600px)">
+                        <img src="pic/web2-small.png" alt="Project 1 Image 2">
+                    </picture>
+                    <picture>
+                        <source srcset="pic/web3.png" media="(min-width: 600px)">
+                        <img src="pic/web3-small.png" alt="Project 1 Image 3">
+                    </picture>
+                </div>
                 <div>
-                    <h2>Project 1</h2>
-                    <p>Description of Project 1</p>
+                    <h2>Project 1: Web Project</h2>
+                    <p>Developed an online shoe marketplace web application, akin to StockX. Built a platform that provided a user-friendly interface for buyers and sellers to interact and transact.</p>
                     <p><code>// This is a code snippet from Project 1
                         function helloWorld() {
                             console.log("Hello, world!");
@@ -88,20 +69,30 @@
                 </div>
             </div>
             <div class="project">
-                <img src="pic/placeholder.png" alt="Project 2 Image" width="200"/>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/the1eTqLrpc" frameborder="0" allowfullscreen></iframe>
+                </div>
                 <div>
-                    <h2>Project 2</h2>
-                    <p>Description of Project 2</p>
+                    <h2>Project 2: Virtual Reality Lab Re-Furnishing</h2>
+                    <p>Created a 3D VR application, replicating a VR lab at a 1:1 scale. The app enabled user modifications and navigation of the virtual environment using limited control inputs.</p>
                 </div>
             </div>
             <div class="project">
-                <video controls>
-                    <source src="video-source.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/7XmQbN8Oj9Q" frameborder="0" allowfullscreen></iframe>
+                </div>
                 <div>
-                    <h2>Project 3</h2>
-                    <p>Description of Project 3</p>
+                    <h2>Project 3: UCSD Aerial Gesture-Controlled Racing Game</h2>
+                    <p>Constructed a VR air racing game using Oculus Quest, featuring a 3D UCSD campus model and hand gesture control.</p>
+                </div>
+            </div>
+            <div class="project">
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/MM9TcBXy2HE" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div>
+                    <h2>Project 4: AR Bowling Game</h2>
+                    <p>Developed an AR bowling simulation game for the Lenovo A3 headset. Features included a virtual keyboard for game parameter adjustments, game mode selection, and 2:1 scale design for optimal use in a computer lab.</p>
                 </div>
             </div>
             <hr>

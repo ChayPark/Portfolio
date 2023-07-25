@@ -7,33 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <style>
-        body {
-            border: 1px solid black;
-            margin: 0;
-            padding: 0;
-        }
-        main {
-            margin: 2em;
-        }
-    </style>
+    <link rel="stylesheet" href="style/home_style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap">
 </head>
 <body>
     <header>
         <nav>
             <table>
-                <caption>Navigation Menu</caption>
-                <colgroup>
-                    <col span="6">
-                </colgroup>
-                <tr>
-                    <th scope="col">Home</th>
-                    <th scope="col">About Me</th>
-                    <th scope="col">Contact Me</th>
-                    <th scope="col">Projects</th>
-                    <th scope="col">Resume</th>
-                    <th scope="col">Courses</th>
-                </tr>
                 <tr>
                     <td>
                         <a href="home.html">Chay Park</a>
@@ -57,27 +37,31 @@
             </table>
         </nav>
     </header>
+    <hr>
     <main>
         <section>
             <h1>Hello, my name is Chay Park</h1>
             <figure>
-                <svg width="200" height="300" viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="10" y="10" width="180" height="280" stroke="black" stroke-width="3" fill="none"/>
-                    <image href="pic/chay.jpeg" x="10" y="10" width="180" height="280"/>
-                </svg>                            
+                <div class="picture-container">
+                    <img src="pic/chay.jpeg" alt="Picture of Me">
+                </div>
                 <figcaption>Me, Chay Park</figcaption>
             </figure>
-            <pre><strong>Hello, my name is Chay Park.</strong> <br>
-I am a passionate and dedicated web developer with a strong interest in front-end and back-end development.<br>
-Thank you for visiting my portfolio, and I hope you find my work inspiring and informative.</pre>
+            <p><strong>Hello, my name is Chay Park.</strong><br>
+                I am a passionate and dedicated web developer with a strong interest in front-end and back-end development.
+                Thank you for visiting my portfolio, and I hope you find my work inspiring and informative.</p>
         </section>
-        <audio controls>
-            <source src="/audio/summer.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-          </audio>          
     </main>
+    <audio controls>
+        <source src="/audio/summer.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
     <footer>
-        <p>&copy; 2023 Chay Park</p>
+        <p>&copy; 2023 <em>Chay Park</em></p>
+        <details>
+            <summary>Legal Information</summary>
+            <p>This site is designed and maintained by Chay Park. The contents are protected by copyright.</p>
+        </details>
     </footer>
 </body>
 </html>
