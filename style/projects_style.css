@@ -118,4 +118,15 @@ footer details {
     section {
         max-width: 100%;
     }
+    
+    .video-container iframe {
+        width: 100%;
+        height: auto;
+    }
+    
+    .image-container img {
+        width: 100%;
+        height: auto;
+    }
+
 }
