@@ -1,3 +1,7 @@
+:root {
+    --primary-color: #333;
+}
+
 header, footer {
     background-color: #D6E0F0;
     padding: 1em;
@@ -50,8 +54,8 @@ main {
 }
 
 body {
-    font-family: 'Pangolin', cursive;
-}
+    font-family: 'Pangolin', cursive, sans-serif;
+  }  
 
 section {
     max-width: 600px;
@@ -100,6 +104,7 @@ footer details {
     nav a {
         margin-right: 0;
         margin-bottom: 0.5em;
+        color: var(--primary-color);
     }
 
     main {
